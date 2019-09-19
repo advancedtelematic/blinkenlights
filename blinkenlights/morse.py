@@ -92,7 +92,7 @@ def letterToMorse(string):
             inter_word_space()
 
 
-f = subprocess.Popen(['tail','-F','/var/log/syslog'],\
+f = subprocess.Popen(['journalctl','-fu','unbound'],\
         stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 while True:
     line = f.stdout.readline()
