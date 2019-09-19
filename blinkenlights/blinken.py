@@ -19,7 +19,7 @@ def dit():
 def dat():
 	print("LED turning on.")
 	GPIO.output(ledPin, GPIO.HIGH)
-	time.sleep(0.6)
+	time.sleep(0.5)
 	print("LED turning off.")
 	GPIO.output(ledPin, GPIO.LOW) 
 	time.sleep(0.2)
@@ -28,7 +28,7 @@ def char_space():
 	time.sleep(0.2)
 
 def word_space():
-	time.sleep(0.6)
+	time.sleep(1)
 
 def sos():
 	dit()
