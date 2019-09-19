@@ -11,24 +11,24 @@ GPIO.setup(ledPin, GPIO.OUT)
 def dit():
 	print("LED turning on.")
 	GPIO.output(ledPin, GPIO.HIGH)
-	time.sleep(0.5)
+	time.sleep(0.2)
 	print("LED turning off.")
 	GPIO.output(ledPin, GPIO.LOW) 
-	time.sleep(0.5)
+	time.sleep(0.2)
 
 def dat():
 	print("LED turning on.")
 	GPIO.output(ledPin, GPIO.HIGH)
-	time.sleep(1.5)
+	time.sleep(0.6)
 	print("LED turning off.")
 	GPIO.output(ledPin, GPIO.LOW) 
-	time.sleep(0.5)
+	time.sleep(0.2)
 
 def char_space():
-	time.sleep(1)
+	time.sleep(0.2)
 
 def word_space():
-	time.sleep(7)
+	time.sleep(0.6)
 
 def sos():
 	dit()
